@@ -160,9 +160,7 @@ main{
             color: #181818;
             margin-bottom: 15px;
 		}
-        &__slider{
 
-        }
 		&__slider-items {
             background: url(../images/slider-about1.jpg);
             background-repeat: no-repeat;
@@ -281,12 +279,7 @@ main{
             top: 50px;
             z-index: -1;
       }
-		&__title {
-                  
-		}
-
-		&__tabs {
-		}
+	
 
 		&__tabs-nav {
                   display: flex;
@@ -308,8 +301,7 @@ main{
                   border-bottom: 1px solid #9DA57C;                  
             }
 
-		&__tabs-content {
-		}
+		
 
             &__tabs-box{
                   display: none;
@@ -443,8 +435,7 @@ main{
                   margin-bottom: 70px;
 		}
 
-		&__tabs-text {
-		}
+		
 		&__tabs-text--nails {
                   cursor: pointer;
                   padding-right: 21px;
