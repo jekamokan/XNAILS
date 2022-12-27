@@ -1,5 +1,8 @@
 $cormorant:'Cormorant Garamond', serif;
+html{
+      scroll-behavior: smooth;
 
+}
 
 body{
     background: #FFFAF3;
@@ -38,6 +41,8 @@ margin: 40px 0 80px 0;
         &__inner{
             display: flex;
             gap: 60px;
+            justify-content: space-between;
+            align-items: center;
         }
 		&__nav-list {
             display: flex;
@@ -45,7 +50,7 @@ margin: 40px 0 80px 0;
             gap: 60px;
 		}
 
-		&__nav-item:nth-child(7) {
+		&__nav-item:nth-child(5) {
             text-transform: uppercase;
             border: 1px solid #000;
             padding: 13px 26px;
@@ -249,7 +254,7 @@ main{
       border: 0.5px solid #9DA57C;
 }
 .slick-dotted.slick-slider {
-    margin-bottom: 168px;
+    margin-bottom: 100px;
 }
 
 .services {
@@ -274,11 +279,14 @@ main{
             background-repeat: no-repeat;
             background-size: cover;
             width: 700px;
-            height: 700px;
+            height: 750px;
             right: 0px;
             top: 50px;
             z-index: -1;
       }
+            &__price{
+                  padding-bottom: 200px;
+            }
 	
 
 		&__tabs-nav {
@@ -786,6 +794,68 @@ main{
 		}
 }
 
+.promo {
+padding: 80px 0 100px;
+		&__inner {
+                  display: flex;
+                  gap: 145px;
+		}
+
+		&__nav-tab {
+                  flex-basis: 376px;
+		}
+
+		&__tab-btn {
+                  font-weight: 400;
+                  font-size: 36px;
+                  line-height: 44px;
+                  font-family: $cormorant;
+                  margin-bottom: 20px;
+                  background: transparent;
+                  border:  none;
+                  padding: 0;
+		}
+
+            &__tab-btn--active{
+                  border-bottom: 2px solid #9DA57C;
+            }
+
+		&__content-tab {
+                  flex-basis: 670px;
+		}
+
+		&__box {
+                  display: none;
+		}
+
+            &__box--active{
+                  display: block;
+            }
+
+		&__text {
+                  margin-bottom: 40px;
+		}
+		&__text-title {
+                  font-weight: 500;
+		}
+
+		&__list {
+		}
+
+		&__item {
+		}
+
+		&__btn {
+                  margin-top: 70px;
+                  background: transparent;
+                  text-transform: uppercase;
+                  padding: 13px 33px;
+                  border: 1px solid #000000;
+                  font-weight: 400;
+                  line-height: 21px;
+		}
+}
+
 
 
 .footer {
@@ -867,5 +937,104 @@ margin-bottom: 50px;
         }
 }
 
+.container {
+}
+.team {
+padding: 100px 0;
+		&__inner {
+                  display: flex;
+                  gap: 100px;
+                  align-items: flex-start;
+                  margin-bottom: 160px;
+		}
+
+		&__content-title {
+                  text-align: left;
+		}
+		&__content-text {
+                  margin-bottom: 40px;
+		}
+
+		&__content-img {
+                  width: 300px;
+                  height: 263px;
+		}
+
+		&__slider-title {
+                  font-family: $cormorant;
+                  font-size: 48px;
+                  line-height: 58px;
+                  text-align: center;
+                  text-transform: uppercase;
+                  font-weight: 400;
+                  margin-bottom: 50px;
+                  position: relative;
+                  z-index: 1;
+                  & span{
+                        font-style: italic;
+                        text-transform: none;
+                  }
+                  &::before{
+                        position: absolute;
+                        content: "";
+                        background: url(../images/team-cirle.png) no-repeat;
+                        background-size: cover;
+                        top: -100px;
+                        width: 700px;
+                        height: 400px;
+                        z-index: -1;
+                  }
+                 
+		}
+
+		&__slider {
+		}
+
+		&__slider-item {
+                  position: relative;
+                  max-width: 270px;
+                  overflow: hidden;
+                  cursor: pointer;
+                  margin: 0 16px;
+                  &:hover .team__slider-card{
+                        top: 0;
+                  }
+		}
+            
+
+		&__slider-img {
+		}
+
+		&__slider-card {
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  padding: 32px 10px;
+                  background: #D4DCB2;
+                  text-align: center;
+                  width: 100%;
+                  top: 100%;
+                  transition: all .5s;
+		}
+
+		&__slider-abovetext {
+                  font-weight: 400;
+                  font-size: 36px;
+                  line-height: 44px;
+                  font-family: $cormorant;
+                  margin-bottom: 33px;
+		}
+
+		&__slider-text {
+                  margin-bottom: 70px;
+		}
+
+		&__slider-btn {
+                  padding: 12px 26px;
+                  border: 1px sloid #000;
+                  background: transparent;
+                  text-transform: uppercase;
+		}
+}
 
 

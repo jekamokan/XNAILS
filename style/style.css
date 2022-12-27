@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #FFFAF3;
   font-family: "Raleway", sans-serif;
@@ -39,13 +43,15 @@ button {
 .header__inner {
   display: flex;
   gap: 60px;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__nav-list {
   display: flex;
   align-items: center;
   gap: 60px;
 }
-.header__nav-item:nth-child(7) {
+.header__nav-item:nth-child(5) {
   text-transform: uppercase;
   border: 1px solid #000;
   padding: 13px 26px;
@@ -236,7 +242,7 @@ main {
 }
 
 .slick-dotted.slick-slider {
-  margin-bottom: 168px;
+  margin-bottom: 100px;
 }
 
 .services {
@@ -262,10 +268,13 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   width: 700px;
-  height: 700px;
+  height: 750px;
   right: 0px;
   top: 50px;
   z-index: -1;
+}
+.services__price {
+  padding-bottom: 200px;
 }
 .services__tabs-nav {
   display: flex;
@@ -685,6 +694,54 @@ main {
   margin-top: 70px;
 }
 
+.promo {
+  padding: 80px 0 100px;
+}
+.promo__inner {
+  display: flex;
+  gap: 145px;
+}
+.promo__nav-tab {
+  flex-basis: 376px;
+}
+.promo__tab-btn {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.promo__tab-btn--active {
+  border-bottom: 2px solid #9DA57C;
+}
+.promo__content-tab {
+  flex-basis: 670px;
+}
+.promo__box {
+  display: none;
+}
+.promo__box--active {
+  display: block;
+}
+.promo__text {
+  margin-bottom: 40px;
+}
+.promo__text-title {
+  font-weight: 500;
+}
+.promo__btn {
+  margin-top: 70px;
+  background: transparent;
+  text-transform: uppercase;
+  padding: 13px 33px;
+  border: 1px solid #000000;
+  font-weight: 400;
+  line-height: 21px;
+}
+
 .footer {
   margin-bottom: 50px;
 }
@@ -752,4 +809,86 @@ main {
 .footer__form-label a {
   margin-left: 25px;
   text-decoration: underline;
+}
+
+.team {
+  padding: 100px 0;
+}
+.team__inner {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  margin-bottom: 160px;
+}
+.team__content-title {
+  text-align: left;
+}
+.team__content-text {
+  margin-bottom: 40px;
+}
+.team__content-img {
+  width: 300px;
+  height: 263px;
+}
+.team__slider-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+.team__slider-title span {
+  font-style: italic;
+  text-transform: none;
+}
+.team__slider-title::before {
+  position: absolute;
+  content: "";
+  background: url(../images/team-cirle.png) no-repeat;
+  background-size: cover;
+  top: -100px;
+  width: 700px;
+  height: 400px;
+  z-index: -1;
+}
+.team__slider-item {
+  position: relative;
+  max-width: 270px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 16px;
+}
+.team__slider-item:hover .team__slider-card {
+  top: 0;
+}
+.team__slider-card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 32px 10px;
+  background: #D4DCB2;
+  text-align: center;
+  width: 100%;
+  top: 100%;
+  transition: all 0.5s;
+}
+.team__slider-abovetext {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 33px;
+}
+.team__slider-text {
+  margin-bottom: 70px;
+}
+.team__slider-btn {
+  padding: 12px 26px;
+  border: 1px sloid #000;
+  background: transparent;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
