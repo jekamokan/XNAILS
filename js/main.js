@@ -28,7 +28,7 @@ const nails = document.querySelector(".services__tabs-item--nails");
 const textNails = document.querySelector(".services__tabs-text--nails");
 textNails.onclick = function () {
   nails.classList.toggle("services__tabs-item--active"),
-    textNails.classList.toggle("services__tabs-text--nails-active");
+  textNails.classList.toggle("services__tabs-text--nails-active");
 };
 
 
