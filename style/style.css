@@ -23,6 +23,12 @@ h2 {
 
 button {
   cursor: pointer;
+  font-weight: 400;
+  background: transparent;
+}
+
+.promo__btn:hover, .studios__btn:hover, .present__link-order:hover, .services__tabs-order:hover, .about__link:hover, .header__nav-btn:hover {
+  background-color: #D4DCB2;
 }
 
 .container {
@@ -51,10 +57,29 @@ button {
   align-items: center;
   gap: 60px;
 }
-.header__nav-item:nth-child(5) {
+.header__nav-btn {
   text-transform: uppercase;
   border: 1px solid #000;
   padding: 13px 26px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.header__nav-link {
+  position: relative;
+  display: inline-block;
+}
+.header__nav-link::after {
+  position: absolute;
+  content: "";
+  background-color: #181818;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s;
+}
+.header__nav-link:hover::after {
+  width: 100%;
 }
 
 main {
@@ -116,11 +141,17 @@ main {
   padding: 13px 26px;
   border: 1px solid #000000;
   margin-right: 30px;
+  transition: 0.3s;
 }
 .about__price {
+  display: inline-block;
   line-height: 21px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  transition: all 0.3s;
+}
+.about__price:hover {
+  transform: scale(1.1);
 }
 .about__img-box {
   display: flex;
@@ -290,6 +321,11 @@ main {
   border: none;
   background: transparent;
   z-index: 2;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+.services__tabs-btn:hover {
+  border-bottom: 1px solid #9DA57C;
 }
 .services__tabs-btn--active {
   border-bottom: 1px solid #9DA57C;
@@ -443,8 +479,9 @@ main {
   background: transparent;
   border: 1px solid #000000;
   font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s;
 }
-
 .portfolio__slider {
   margin-bottom: 160px;
 }
@@ -512,10 +549,16 @@ main {
   padding: 13px 33px;
   border: 1px solid #000000;
   margin-right: 30px;
+  transition: all 0.3s;
 }
 .present__link-details {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.present__link-details:hover {
+  transform: scale(1.1);
 }
 
 .feedback {
@@ -621,6 +664,42 @@ main {
   height: 10px;
   top: -3px;
   right: 0;
+  -webkit-animation: finger 2s linear infinite;
+          animation: finger 2s linear infinite;
+}
+@-webkit-keyframes finger {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: 5px;
+  }
+  50% {
+    right: 10px;
+  }
+  75% {
+    right: 5px;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes finger {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: 5px;
+  }
+  50% {
+    right: 10px;
+  }
+  75% {
+    right: 5px;
+  }
+  100% {
+    right: 0;
+  }
 }
 .feedback__slider-full--active {
   display: none;
@@ -660,6 +739,11 @@ main {
   line-height: 44px;
   font-family: "Cormorant Garamond", serif;
   padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+.studios__tab-btn:hover {
+  border-bottom: 1px solid #9DA57C;
 }
 .studios__tab-btn--active {
   border-bottom: 1px solid #9DA57C;
@@ -692,8 +776,8 @@ main {
   text-transform: uppercase;
   border: 1px solid #000000;
   margin-top: 70px;
+  transition: all 0.3s;
 }
-
 .promo {
   padding: 80px 0 100px;
 }
@@ -740,77 +824,8 @@ main {
   border: 1px solid #000000;
   font-weight: 400;
   line-height: 21px;
+  transition: all 0.3s;
 }
-
-.footer {
-  margin-bottom: 50px;
-}
-.footer__inner {
-  display: flex;
-  justify-content: start;
-}
-.footer__social-logo {
-  margin-bottom: 27px;
-}
-.footer__social-list {
-  display: flex;
-  gap: 17px;
-  margin-bottom: 79px;
-}
-.footer__about {
-  margin: 0 30px 0 160px;
-}
-.footer__about-item {
-  margin-bottom: 15px;
-}
-.footer__about-item:nth-child(5) {
-  margin-top: 25px;
-}
-.footer__actions {
-  margin-right: 130px;
-}
-.footer__actions-item {
-  margin-bottom: 15px;
-}
-.footer__form {
-  flex-basis: 270px;
-}
-.footer__form-title {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
-  margin-bottom: 22px;
-}
-.footer__form-input {
-  width: 100%;
-  height: 50px;
-  background: transparent;
-  border: 1px solid #000000;
-  padding: 0 19px 0 13px;
-  margin-bottom: 17px;
-}
-.footer__form-input::-moz-placeholder {
-  background: url(../images/input-arrow.svg) no-repeat right;
-}
-.footer__form-input:-ms-input-placeholder {
-  background: url(../images/input-arrow.svg) no-repeat right;
-}
-.footer__form-input::placeholder {
-  background: url(../images/input-arrow.svg) no-repeat right;
-}
-.footer__form-checkbox {
-  width: 19px;
-  height: 19px;
-}
-.footer__form-label {
-  font-size: 14px;
-}
-.footer__form-label a {
-  margin-left: 25px;
-  text-decoration: underline;
-}
-
 .team {
   padding: 100px 0;
 }
@@ -891,4 +906,180 @@ main {
   border: 1px sloid #000;
   background: transparent;
   text-transform: uppercase;
+}
+
+.blog {
+  padding-bottom: 100px;
+}
+.blog__title {
+  text-align: left;
+}
+.blog__wrapper {
+  margin-bottom: 30px;
+}
+.blog__baner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 370px;
+  padding: 20px;
+  width: 100%;
+  background: url(../images/blog-bg1.jpg) no-repeat;
+  margin-bottom: 30px;
+}
+.blog__baner--two {
+  background: url(../images/blog-bg2.jpg) no-repeat;
+}
+.blog__baner-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Cormorant Garamond", serif;
+  max-width: 350px;
+}
+.blog__baner-title--two {
+  color: #FFFAF3;
+}
+.blog__baner-date--two {
+  color: #FFFAF3;
+}
+.blog__list {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__item {
+  flex-basis: 370px;
+  background: url(../images/blog1.jpg) no-repeat;
+  height: 470px;
+}
+.blog__item:nth-child(2) {
+  background: url(../images/blog2.jpg) no-repeat;
+}
+.blog__item:nth-child(3) {
+  background: url(../images/blog3.jpg) no-repeat;
+}
+.blog__item-link {
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.blog__item-content {
+  height: 50%;
+  background: rgba(255, 250, 243, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog__item-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Cormorant Garamond", serif;
+}
+.page-one {
+  padding-bottom: 100px;
+}
+.page-one__title {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.page-one__date {
+  margin-bottom: 10px;
+}
+.page-one__catalog {
+  margin-bottom: 30px;
+}
+.page-one__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.page-one__content {
+  flex-basis: 770px;
+}
+.page-one__text {
+  margin-bottom: 20px;
+}
+
+.confi {
+  padding: 100px 0;
+}
+
+.footer {
+  margin-bottom: 50px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social-logo {
+  margin-bottom: 27px;
+}
+.footer__social-list {
+  display: flex;
+  gap: 17px;
+  margin-bottom: 79px;
+}
+.footer__about-item {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer__about-item:nth-child(5) {
+  margin-top: 25px;
+}
+.footer__about-link:hover {
+  font-weight: 400;
+}
+.footer__actions-item {
+  margin-bottom: 15px;
+}
+.footer__form {
+  flex-basis: 270px;
+}
+.footer__form-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 22px;
+}
+.footer__form-input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #000000;
+  padding: 0 19px 0 13px;
+  margin-bottom: 17px;
+}
+.footer__form-input::-moz-placeholder {
+  background: url(../images/input-arrow.svg) no-repeat right;
+}
+.footer__form-input:-ms-input-placeholder {
+  background: url(../images/input-arrow.svg) no-repeat right;
+}
+.footer__form-input::placeholder {
+  background: url(../images/input-arrow.svg) no-repeat right;
+}
+.footer__form-checkbox {
+  width: 19px;
+  height: 19px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.footer__form-checkbox:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.footer__form-label {
+  font-size: 14px;
+}
+.footer__form-label a {
+  margin-left: 25px;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

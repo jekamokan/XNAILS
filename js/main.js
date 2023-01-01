@@ -33,6 +33,7 @@ textNails.onclick = function () {
 
 
 
+
 // табы
 
 // табы с услугами
