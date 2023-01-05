@@ -1,0 +1,21 @@
+{
+    "css.format.enable": true,
+    "less.format.enable": true,
+    "css.format.newlineBetweenRules": false,
+    "css.format.newlineBetweenSelectors": false,
+    "css.format.preserveNewLines": false,
+    "scss.format.enable": false,
+    "scss.format.newlineBetweenSelectors": false,
+    "scss.format.newlineBetweenRules": false,
+    "scss.format.preserveNewLines": false,
+    "scss.format.braceStyle": "expand",
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null,
+            "savePathReplacementPairs": null
+        }
+    ]
+}

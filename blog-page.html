@@ -16,7 +16,10 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a class="heaer__link-logo" href="index.html">
+                    <div class="header__burger-btn">
+                        <span></span>
+                    </div>
+                    <a class="header__link-logo" href="index.html">
                         <img class="header__logo" src="images/logo.svg" alt="logo" >
                     </a>
                     <nav class="header__nav">
@@ -27,23 +30,17 @@
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="price.html">Прайс</a>
                             </li>
-                            <!-- <li class="header__nav-item">
-                                <a class="header__nav-link" href="">Отзывы</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="">Студии</a>
-                            </li> -->
+                            
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="blog.html">Блог</a>
                             </li>
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="tel:78126605088">+7 (812) 660-50-88</a>
                             </li>
-                            <li class="header__nav-item">
-                                <button class="header__nav-btn" >записаться</button>
-                            </li>
+                            
                         </ul>
                     </nav>
+                    <button class="header__nav-btn" >записаться</button>
                 </div>
             </div>
         </header>
@@ -107,12 +104,7 @@
                          <li class="footer__about-item">
                             <a href="team.html" class="footer__about-link">О нас</a>
                         </li>
-                        <!-- <li class="footer__about-item">
-                            <a href="" class="footer__about-link">Портфолио</a>
-                        </li>
-                        <li class="footer__about-item">
-                            <a href="" class="footer__about-link">Отзывы</a>
-                        </li> -->
+                        
                         
                         <li class="footer__about-item">
                             <a class="footer__about-link" href="promo.html">Акции</a>
@@ -127,20 +119,7 @@
                             <a href="" class="footer__about-link">Политика конфиденциальности</a>
                         </li>
                     </ul>
-                    <!-- <ul class="footer__actions">
-                        <li class="footer__actions-item">
-                            <a class="footer__actions-link" href="">Акции</a>
-                        </li>
-                        <li class="footer__actions-item">
-                            <a class="footer__actions-link" href="">Блог</a>
-                        </li>
-                        <li class="footer__actions-item">
-                            <a class="footer__actions-link" href="">Прайс</a>
-                        </li>
-                        <li class="footer__actions-item">
-                            <a class="footer__actions-link" href="">Студии</a>
-                        </li>
-                    </ul> -->
+                    
                     <div class="footer__form">
                         <p class="footer__form-title">
                             Узнавайте первым о новых акциях!
@@ -162,5 +141,9 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

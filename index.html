@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,27 @@
     <title>XNAILS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Cormorant+SC&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Cormorant+SC&family=Raleway:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/adaptive.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a class="heaer__link-logo" href="index.html">
-                        <img class="header__logo" src="images/logo.svg" alt="logo" >
+                    <div class="header__burger-btn">
+                        <span></span>
+                    </div>
+                    <a class="header__link-logo" href="index.html">
+                        <img class="header__logo" src="images/logo.svg" alt="logo">
                     </a>
                     <nav class="header__nav">
                         <ul class="header__nav-list">
@@ -30,34 +38,23 @@
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="price.html">Прайс</a>
                             </li>
-                            <!-- <li class="header__nav-item">
-                                <a class="header__nav-link" href="">Отзывы</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="">Студии</a>
-                            </li> -->
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="blog.html">Блог</a>
                             </li>
                             <li class="header__nav-item">
                                 <a class="header__nav-link--tel" href="tel:78126605088">+7 (812) 660-50-88</a>
                             </li>
-                            <li class="header__nav-item">
-                                <button class="header__nav-btn">записаться</button>
-                            </li>
                         </ul>
                     </nav>
+                    <button class="header__nav-btn">записаться</button>
                 </div>
             </div>
         </header>
         <main class="main">
             <section class="about">
                 <div class="container">
-                    <p class="about__subtitle">
-                        XNAILS - студии маникюра в Санкт-Петербурге
-                    </p>
-                    <h1 class="about__title">
-                        Мы знаем все о <span>красивом</span> и <span>качественном</span> покрытии
+                    <p class="about__subtitle"> XNAILS - студии маникюра в Санкт-Петербурге </p>
+                    <h1 class="about__title"> Мы знаем все о <span>красивом</span> и <span>качественном</span> покрытии
                     </h1>
                     <div class="about__link-box">
                         <button class="about__link" href="">записаться</button>
@@ -71,28 +68,16 @@
                     <div class="about__info">
                         <ul class="about__list">
                             <li class="about__item">
-                                <p class="about__item-number">
-                                    4
-                                </p>
-                                <p class="about__item-text">
-                                    года  мы радуем наших клиентов
-                                </p>
+                                <p class="about__item-number"> 4 </p>
+                                <p class="about__item-text"> года мы радуем наших клиентов </p>
                             </li>
                             <li class="about__item">
-                                <p class="about__item-number">
-                                    10 000+
-                                </p>
-                                <p class="about__item-text">
-                                    маникюров мы сделали за последний год
-                                </p>
+                                <p class="about__item-number"> 10 000+ </p>
+                                <p class="about__item-text"> маникюров мы сделали за последний год </p>
                             </li>
                             <li class="about__item">
-                                <p class="about__item-number">
-                                    3+
-                                </p>
-                                <p class="about__item-text">
-                                    наши мастера имеют опыт более 3 лет
-                                </p>
+                                <p class="about__item-number"> 3+ </p>
+                                <p class="about__item-text"> наши мастера имеют опыт более 3 лет </p>
                             </li>
                         </ul>
                     </div>
@@ -100,19 +85,22 @@
                         <div class="about__slider-items">
                             <div class="about__slider-content">
                                 <p class="about__slider-title">Вместе дешевле!</p>
-                                <p class="about__slider-text">Расскажите о нас своим подругам, знакомым, коллегам или родственникам.Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его первого визита</p>
+                                <p class="about__slider-text">Расскажите о нас своим подругам, знакомым, коллегам или
+                                    родственникам.Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его
+                                    первого визита</p>
                                 <a class="about__slider-link" href="promo.html">Подробнее</a>
                             </div>
-                        </div>
+                        </div>           
                         <div class="about__slider-items--second swiper-slide">
                             <div class="about__slider-content--second">
                                 <p class="about__slider-title--second">Скидка 10% <br> на первый визит</p>
-                                    <a class="about__slider-link" href="promo.html">Подробнее</a>
+                                <a class="about__slider-link" href="promo.html">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
             <section class="services">
                 <div class="container">
                     <h2 class="services__title">Наши услуги</h2>
@@ -265,6 +253,7 @@
                     </div>
                 </div>
             </section>
+            <!--
             <section class="portfolio">
                 <div class="container">
                     <h2 class="portfolio__title">Портфолио</h2>
@@ -421,13 +410,7 @@
                          <li class="footer__about-item">
                             <a href="team.html" class="footer__about-link">О нас</a>
                         </li>
-                        <!-- <li class="footer__about-item">
-                            <a href="" class="footer__about-link">Портфолио</a>
-                        </li>
-                        <li class="footer__about-item">
-                            <a href="" class="footer__about-link">Отзывы</a>
-                        </li> -->
-                        
+                       
                         <li class="footer__about-item">
                             <a class="footer__about-link" href="promo.html">Акции</a>
                         </li>
@@ -441,20 +424,7 @@
                             <a href="confi.html" class="footer__about-link">Политика конфиденциальности</a>
                         </li>
                     </ul>
-                    <!-- <ul class="footer__actions">
-                        <li class="footer__actions-item">
-                            <a class="footer__actions-link" href="">Акции</a>
-                        </li>
-                        <li class="footer__actions-item">
-                            <a class="footer__actions-link" href="">Блог</a>
-                        </li>
-                        <li class="footer__actions-item">
-                            <a class="footer__actions-link" href="">Прайс</a>
-                        </li>
-                        <li class="footer__actions-item">
-                            <a class="footer__actions-link" href="">Студии</a>
-                        </li>
-                    </ul> -->
+                    
                     <div class="footer__form">
                         <p class="footer__form-title">
                             Узнавайте первым о новых акциях!
@@ -474,14 +444,13 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
-
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

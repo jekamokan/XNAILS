@@ -1,4 +1,17 @@
-$(document).ready(function(){
+// бургер
+
+
+$(document).ready(function () {
+  $('.header__burger-btn').click(function (event) {
+    $('.header__burger-btn').toggleClass('header__burger-line--close');
+  });
+  $('.header__burger-btn').click(function (event) {
+    $('.header__nav-list').toggleClass('header__nav-list--open');
+  });
+ });
+
+
+$(document).ready(function () {
   $('.about__slider').slick({
     dots: true,
     arrows: false,
@@ -30,6 +43,7 @@ textNails.onclick = function () {
   nails.classList.toggle("services__tabs-item--active"),
   textNails.classList.toggle("services__tabs-text--nails-active");
 };
+
 
 
 
@@ -111,3 +125,6 @@ btn.onclick = function () {
   fullText.classList.toggle("feedback__slider-full--active");
   littleText.classList.toggle("feedback__slider-little--active");
 };
+
+// burger-btn
+
