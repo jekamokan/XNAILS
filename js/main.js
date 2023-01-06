@@ -32,6 +32,9 @@ $(document).ready(function(){
   $('.feedback__slider').slick({
     prevArrow:'<button class="feedback__slider-btn feedback__arrow-left"><img src="images/feed-arrow-left.svg" alt=""></button>',
     nextArrow:'<button class="feedback__slider-btn feedback__arrow-right"><img src="images/feed-arrow-right.svg" alt=""></button>',
+    slidesToShow:1,
+    // centerMode: true,
+    
   });
 });
 

@@ -64,6 +64,9 @@ button {
   background-color: transparent;
   transition: 0.3s;
 }
+.header__nav-btn--mobile {
+  display: none;
+}
 .header__nav-link {
   position: relative;
   display: inline-block;
@@ -613,6 +616,9 @@ main {
   justify-content: space-between;
   gap: 30px;
 }
+.feedback__content {
+  max-width: 670px;
+}
 .feedback__title {
   text-align: left;
   font-family: "Cormorant Garamond", serif;
@@ -624,9 +630,6 @@ main {
 }
 .feedback__title-left {
   margin-left: 190px;
-}
-.feedback__slider {
-  width: 635px;
 }
 .feedback__slider-item {
   padding-left: 66px;

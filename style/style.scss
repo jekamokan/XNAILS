@@ -64,6 +64,9 @@ button {
       @extend %btn-hover;
     }
   }
+  &__nav-btn--mobile{
+    display: none;
+  }
 
   &__nav-link {
     position: relative;
@@ -675,6 +678,7 @@ main {
   }
 
   &__content {
+    max-width: 670px;
   }
 
   &__title {
@@ -691,7 +695,6 @@ main {
   }
 
   &__slider {
-    width: 635px;
   }
 
   &__slider-item {
