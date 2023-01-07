@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 10px;
   }
   h2 {
     font-size: 55px;
@@ -187,12 +187,9 @@
     line-height: 19px;
     padding: 10px 20px;
   }
-  .portfolio__slider-item {
-    width: 190px !important;
-  }
   .portfolio__text {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 22px;
+    line-height: 23px;
   }
   .portfolio__slider-btn {
     display: none !important;
@@ -320,6 +317,16 @@
   }
 }
 @media (max-width: 426px) {
+  h2 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 19px;
+  }
   .header__nav-btn {
     display: none;
   }
@@ -358,7 +365,7 @@
     letter-spacing: normal;
   }
   .about__title span:nth-child(2) {
-    margin-right: 35px;
+    margin-right: 60px;
   }
   .about__subtitle {
     font-size: 14px;
@@ -440,5 +447,168 @@
   }
   .about__slider-title--second {
     color: #000;
+  }
+  .services::before {
+    width: 200px;
+    height: 280px;
+    left: -70px;
+    top: 0px;
+    background-size: contain;
+  }
+  .services::after {
+    display: none;
+  }
+  .services__tabs-btn {
+    font-size: 20px;
+    line-height: 19px;
+  }
+  .services__tabs-nav {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .services__tabs-box--neils::after, .services__tabs-box--extension::after, .services__tabs-box--pedicure::after, .services__tabs-box--::after {
+    display: none;
+  }
+  .services__tabs-box--neils::before, .services__tabs-box--extension::before, .services__tabs-box--pedicure::before, .services__tabs-box--::before {
+    display: none;
+  }
+  .services__tabs-list {
+    max-width: none;
+    margin-bottom: 50px;
+  }
+  .services__tabs-item--nails {
+    margin-left: 50px;
+  }
+  .portfolio__slider .slick-dots {
+    margin-bottom: -100px;
+  }
+  .portfolio__text {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .slick-dots li {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
+  .slick-dots li button {
+    width: 15px;
+    height: 15px;
+  }
+  .present__inner {
+    flex-direction: column;
+  }
+  .present__title, .present__text {
+    text-align: center;
+  }
+  .present__link-order {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .present__link-details {
+    display: flex;
+    justify-content: center;
+  }
+  .feedback {
+    padding-top: 0px;
+  }
+  .feedback__slider-item:before {
+    width: 30px;
+    height: 20px;
+    background-size: contain;
+  }
+  .feedback__inner {
+    display: block;
+    position: relative;
+  }
+  .feedback__img {
+    width: 120px;
+    height: 150px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .feedback__title-left {
+    margin-left: 0;
+  }
+  .feedback__slider-item {
+    padding-left: 45px;
+  }
+  .feedback__slider-text {
+    max-width: 320px;
+    margin-bottom: 5px;
+  }
+  .feedback__slider-btn {
+    padding: 0;
+  }
+  .feedback__slider-name {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .studios {
+    padding: 50px 0;
+  }
+  .studios__tab-content {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .studios__tab-btn {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .studios__tab-nav {
+    gap: 10px;
+  }
+  .studios__tab-info {
+    text-align: center;
+    flex-basis: auto;
+    margin-bottom: 45px;
+  }
+  .studios__tab-about {
+    margin-bottom: 20px;
+  }
+  .studios__tab-number {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .studios__tab-addres {
+    margin-bottom: 20px;
+  }
+  .studios__btn {
+    padding: 12px 45px;
+  }
+  .studios__tab-map iframe {
+    border: 0;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+  .footer__social-list {
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .footer__social-text {
+    display: none;
+  }
+  .footer__about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 20px;
+  }
+  .footer__form-title {
+    max-width: none;
+    text-align: center;
+  }
+  .footer__form-label {
+    max-width: 265px;
+    display: inline-block;
   }
 }/*# sourceMappingURL=adaptive.css.map */

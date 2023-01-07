@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 10px;
   }
   h2{
     font-size: 55px;
@@ -227,11 +227,11 @@
 }
 .portfolio{
   &__slider-item{
-    width: 190px !important;
+    // width: 190px !important;
   }
   &__text{
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 22px;
+    line-height: 23px;
   }
   &__slider-btn{
     display: none !important;
@@ -375,6 +375,16 @@
 
 
 @media (max-width: 426px){
+  h2{
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+  button{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 19px;
+  }
   .header{
     &__nav-btn{
       display: none;
@@ -413,7 +423,7 @@
     line-height: 40px;
     letter-spacing: normal;
     & span:nth-child(2){
-      margin-right: 35px;
+      margin-right: 60px;
     }
     }
     &__subtitle{
@@ -498,4 +508,184 @@
       color: #000;
     }
   }
+  .services{
+    &::before{
+      width: 200px;
+      height: 280px;
+      left: -70px;
+      top: 0px;
+      background-size: contain;
+    }
+    &::after{
+      display: none;
+    }
+    &__tabs-btn{
+      font-size: 20px;
+      line-height: 19px;
+    }
+    &__tabs-nav{
+      gap: 0;
+      justify-content: space-between;
+    }
+    &__tabs-box--neils,
+    &__tabs-box--extension,
+    &__tabs-box--pedicure,
+    &__tabs-box--{
+      &::after{
+        display: none;
+      }
+      &::before{
+        display: none;
+      }
+    }
+    &__tabs-list{
+      max-width: none;
+      margin-bottom: 50px;
+    }
+    &__tabs-item--nails{
+      margin-left: 50px;
+    }
+  }
+  .portfolio{
+    &__slider .slick-dots{
+      margin-bottom: -100px;
+    }
+    &__img{
+    }
+    &__text{
+      font-size: 26px;
+      line-height: 35px;
+    }
+  }
+  
+  .slick-dots li{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
+  .slick-dots li button{
+    width: 15px;
+    height: 15px;
+    
+  }
+  .present{
+    &__inner{
+      flex-direction: column;
+    }
+    &__title,
+    &__text{
+      text-align: center;
+    }
+    &__link-order{
+      display: block;
+      margin: 0 auto 20px;
+    }
+    &__link-details{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .feedback{
+    padding-top: 0px;
+    &__slider-item:before{
+      width: 30px;
+      height: 20px;
+      background-size: contain;
+    }
+    &__inner{
+      display: block;
+      position: relative;
+    }
+    &__img{
+      width: 120px;
+      height: 150px;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    &__title-left{
+      margin-left: 0;
+    }
+    &__slider-item{
+      padding-left: 45px;
+    }
+    &__slider-text{
+      max-width: 320px;
+      margin-bottom: 5px;
+    }
+    &__slider-btn{
+      padding: 0;
+    }
+    &__slider-name{
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .studios{
+    padding: 50px 0;
+    &__tab-content{
+      flex-direction: column-reverse;
+      gap:0;
+    }
+    &__tab-btn{
+      font-size: 19px;
+      line-height: 22px;
+    }
+    &__tab-nav{
+      gap: 10px;
+    }
+    &__tab-info{
+      text-align: center;
+      flex-basis: auto;
+      margin-bottom: 45px;
+    }
+    &__tab-about{
+      margin-bottom: 20px;
+    }
+    &__tab-number{
+      display: block;
+      margin-bottom: 20px;
+    }
+    &__tab-addres{
+      margin-bottom: 20px;
+    }
+    &__btn{
+      padding: 12px 45px;
+    }
+    &__tab-map iframe{
+      border: 0;
+      width: 100%;
+      max-width: none;
+      max-height: none;
+  }
+    }
+    .footer{
+      &__inner{
+        flex-direction: column;
+      }
+      &__social-list{
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+      &__social-text{
+        display: none;
+      }
+      &__about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px;
+        margin-bottom: 20px;
+      }
+      &__form-title{
+        max-width: none;
+        text-align: center;
+      }
+      &__form-label{
+        max-width: 265px;
+        display: inline-block;
+      }
+    }
 }

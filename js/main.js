@@ -24,7 +24,16 @@ $(document).ready(function(){
     slidesToShow: 4,
     infinite: true,
     prevArrow:'<button class="portfolio__slider-btn portfolio__arrow-left"><img src="images/arrow-left.svg" alt=""></button>',
-    nextArrow:'<button class="portfolio__slider-btn portfolio__arrow-right"><img src="images/arrow-right.svg" alt=""></button>', 
+    nextArrow:'<button class="portfolio__slider-btn portfolio__arrow-right"><img src="images/arrow-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 427,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      }
+    ] 
   });
 });
 
