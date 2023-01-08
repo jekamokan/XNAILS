@@ -370,8 +370,120 @@
     margin-bottom: 30px;
   }
 }
-
+.team{
+  &__img{
+    width: 344px;
+  }
+  &__inner{
+    gap: 20px;
+    margin-bottom: 100px;
+  }
+  &__content-text{
+    font-size: 16px;
+    line-height: 24px;
+    &:nth-child(5){
+      display: none;
+    }
+  }
+  &__content-img{
+    width: 223px;
+    height: 196px;
+  }
+  &__slider-title{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  &__slider-card{
+    padding: 10px;
+  }
+  &__slider-abovetext{
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  &__slider-text{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  &__slider-btn{
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 21px;
+  }
+  }
+  .slick-dots li button{
+    width: 15px;
+    height: 15px;
+  }
+  .slick-dots li {
+    width: 15px;
+    height: 15px;
+  }
+  .promo{
+    padding-top: 0px;
+    &__tab-btn{
+      font-size: 24px;
+    }
+    &__nav-tab{
+      flex-basis: auto;
+    }
+    &__inner{
+      gap: 35px;
+    }
+    &__text,
+    &__text-title,
+    &__list{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .blog{
+    &__wrapper{
+      margin-bottom: 16px;
+    }
+    &__baner{
+      background-size: cover;
+      background-position: center;
+      height: 255px;
+      margin-bottom: 16px;
+    }
+    &__item{
+      height: 282px;
+      flex-basis: 237px;
+    }
+    &__item-title{
+      font-size: 17px;
+      line-height: 23px
+    }
+    &__item-date{
+      font-size: 14px;
+    }
+  }
+  .page-one{
+    &__img{
+      width: 223px;
+    }
+    &__content{
+      flex-basis: auto;
+      max-width: 464px;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }
+
+
+
+
+
+// next
+
+
+
+
+
 
 
 @media (max-width: 426px){
@@ -530,7 +642,7 @@
     &__tabs-box--neils,
     &__tabs-box--extension,
     &__tabs-box--pedicure,
-    &__tabs-box--{
+    &__tabs-box--brow{
       &::after{
         display: none;
       }
@@ -544,6 +656,9 @@
     }
     &__tabs-item--nails{
       margin-left: 50px;
+    }
+    &__price{
+      padding-bottom: 100px;
     }
   }
   .portfolio{
@@ -684,8 +799,114 @@
         text-align: center;
       }
       &__form-label{
-        max-width: 265px;
+        max-width: 215px;
         display: inline-block;
+      }
+      
+      &__form{
+        flex-basis: auto;
+      }
+    }
+    .team{
+      padding: 0;
+      &__inner{
+        flex-direction: column;
+        text-align: center;
+      }
+      &__content-title{
+        text-align: center;
+      }
+      &__content-text{
+        margin-bottom: 20px;
+      }
+      &__content-img{
+        display: none;
+      }
+      &__img{
+        width: 290px;
+        height: 436px;
+        margin: 0 auto;
+      }
+      &__slider{
+        padding-bottom: 20px;
+      }
+      &__slider-title{
+        font-size: 22px;
+        line-height: 35px;
+        &::before{
+          background-size: contain;
+          top: 0;
+          left: 0;
+          width: 360px;
+          height: 200px;
+        }
+      }
+      &__slider-text{
+        display: none;
+      }
+      &__slider-abovetext{
+        margin-bottom: 55px;
+      }
+      &__team-slider{
+        padding-bottom: 35px;
+      }
+    }
+    .promo{
+      &__tab-btn{
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      &__text{
+        margin-bottom: 20px;
+      }
+      &__text,
+      &__text-title,
+      &__list{
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &__btn{
+        margin-top: 40px;
+        padding: 5px 10px;
+        font-size: 14px;
+      }
+    }
+    .confi{
+      padding: 0 0 50px 0;
+    }
+    .blog{
+      &__list{
+        flex-direction: column;
+        gap: 16px;
+      }
+      &__item{
+        flex-basis: auto;
+        height: 255px;
+        background-size: cover;
+        background-position: center;
+        &:nth-child(2){
+          background-size: cover;
+          background-position: bottom;
+        }
+        &:nth-child(3){
+          background-size: cover;
+          background-position: bottom;
+        }
+      }
+    }
+    .page-one{
+      padding-bottom: 50px;
+      &__img{
+        display: none;
+      }
+      &__title,
+      &__date,
+      &__catalog{
+        text-align: center;
+      }
+      &__text{
+        font-size: 14px;
+        line-height: 22px;
       }
     }
 }

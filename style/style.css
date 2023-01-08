@@ -25,6 +25,7 @@ button {
   cursor: pointer;
   font-weight: 400;
   background: transparent;
+  color: #000000;
 }
 
 .promo__btn:hover, .studios__btn:hover, .present__link-order:hover, .services__tabs-order:hover, .about__link:hover, .header__nav-btn:hover {
@@ -703,6 +704,7 @@ main {
   display: block;
   padding-right: 15px;
   position: relative;
+  color: #000000;
 }
 .feedback__slider-full::after {
   content: "👈";
@@ -844,6 +846,7 @@ main {
   background: transparent;
   border: none;
   padding: 0;
+  border-bottom: 2px solid transparent;
 }
 .promo__tab-btn--active {
   border-bottom: 2px solid #9da57c;
@@ -1035,8 +1038,7 @@ main {
   padding-bottom: 100px;
 }
 .page-one__title {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
 }
 .page-one__date {
   margin-bottom: 10px;

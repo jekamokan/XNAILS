@@ -25,6 +25,8 @@ button {
   cursor: pointer;
   font-weight: 400;
   background: transparent;
+  color: #000000;
+
 }
 %btn-hover {
   background-color: #d4dcb2;
@@ -779,6 +781,7 @@ main {
     display: block;
     padding-right: 15px;
     position: relative;
+    color: #000000;
     &::after {
       content: "👈";
       position: absolute;
@@ -930,6 +933,8 @@ main {
     background: transparent;
     border: none;
     padding: 0;
+    border-bottom: 2px solid transparent;
+
   }
 
   &__tab-btn--active {
@@ -1163,7 +1168,7 @@ main {
 .page-one {
   padding-bottom: 100px;
   &__title {
-    text-align-last: left;
+    text-align: left;
   }
 
   &__date {
@@ -1278,4 +1283,7 @@ main {
     margin-left: 25px;
     text-decoration: underline;
   }
+
 }
+
+
